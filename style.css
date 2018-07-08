@@ -1,0 +1,33 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*the margin and padding is just to neutralize the whole document*/
+  background-image: url("pics/cape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container h1{
+  margin-left: 25%;
+  font-size: 100px;
+  color: rgba(225,225,225,0.1);
+  background-image: url("pics/stars.jpeg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  animation: animate 60s linear infinite;
+  text-align: left;
+  margin-top: 15%;
+  font-weight: 700;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  40% {
+    background-position: left 800px top 10px;
+  }
+}
